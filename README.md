@@ -19,11 +19,6 @@ Inserting Dataframe into Cassandra Table - The Spark Dataframe holding the JSON 
 Queries Execution Method - The set of queries used to validate the data inside Cassandra tables are executed from inside function called: execute_queries. Sample queries are written for testing the data semantics and more queries can be written in the same method. 
 
 
-# Ideas(Next Steps):
-
-I could have created an external sql file encapsulating all queries and including even more and then from the python command line args to only pass argument like: "execute_queries" that could call the method to read the query file. 
-
-
 # Prerequisites:
 
 Cassandra Spark Connector Package is required to connect with Cassandra Database (com.datastax.spark:spark-cassandra-connector_2.11:2.0.1)
@@ -40,6 +35,10 @@ Sample Script Call for newyorker.py from Spark-Submit with 1 arg(filename)
 ./spark-submit --packages com.datastax.spark:spark-cassandra-connector_2.11:2.0.1 newyorker.py yelp_dataset_challenge_round9.tar
 
 
+
+# Ideas(Next Steps):
+
+I could have created an external sql file encapsulating all queries and including even more and then from the python command line args to only pass argument like: "execute_queries" that could call the method to read the query file. 
 
 
 # Lacking Component:
