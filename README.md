@@ -17,9 +17,8 @@ Parsing of JSON Files Method- The JSON Schema files are one liner objects which 
 
 Inserting Dataframe into Cassandra Table - The Spark Dataframe holding the JSON data and leveraging the Cassandra package format writes into Cassandra NoSQL Table.
 
-Queries Execution Method - The set of queries used to validate the data inside Cassandra tables are executed from inside function called: execute_queries. Sample queries are written for testing the data semantics and more queries can be written in the same method.
-
-
+Queries Execution Method - The set of queries used to validate the data inside Cassandra tables are executed from inside function called: execute_queries. Sample queries are written for testing the data semantics and more queries can be written in the same method. 
+Idea(Next Steps):I could have created an external sql file encapsulating all queries and including even more and then from the python command line args to only pass argument like: "execute_queries" that could call the method to read the query file. 
 
 
 #Prerequisites:
