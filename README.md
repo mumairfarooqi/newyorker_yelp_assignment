@@ -4,7 +4,7 @@
 
 # NewYorker Yelp Dataset Assignment:
 
-This repository contains the python script code which basically reads the JSON schema files packed inside a TAR file (yelp_dataset_challenge_round9.tar) taken from Yelp Dataset Challenge Round 9.
+This repository contains the python script code which basically reads the JSON schema files packed inside a TAR file (yelp_dataset_challenge_round9.tar) taken from Yelp Dataset Challenge Round 9 and loads them into Tabular format inside Cassandra Database Tables. Subsequently, it executes a couple of queries to make sure that JSON dataset has been loaded correctly.
 
 
 
